@@ -1,1 +1,0 @@
-print('coding' in 'coding for all')
