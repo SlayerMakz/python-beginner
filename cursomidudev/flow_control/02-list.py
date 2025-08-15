@@ -52,6 +52,7 @@ print(lista5[::-1]) # De vuelva la lista invertida.
 lista5[0] = 20
 print(lista5)
 
+##############################################
 # Añadir elementos a una lista.
 lista1 = [1, 2, 3]
 
@@ -62,3 +63,5 @@ print(lista1)
 # Forma corta y más eficiente.
 lista1 += [7, 8, 9]
 print(lista1)
+#############################################
+
