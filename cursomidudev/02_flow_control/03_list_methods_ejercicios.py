@@ -76,3 +76,36 @@ sorted_numers = numbers.count(2)
 print(f"Cuantos numeros 2 hay?: {sorted_numers}")
 in_list = (7 in numbers)
 print(f"El 7 aparece en la lista?: {in_list}")
+
+print("--------------Ejercicio 5-------------\n")
+# Crea una lista llamada original con los números [1, 2, 3].
+# Crea una copia de la lista original llamada copia_1 usando slicing.
+# Crea otra copia llamada copia_2 usando copy().
+# Crea una referencia a la lista original llamada referencia.
+# Modifica el primer elemento de la lista referencia a 10.
+# Imprime las cuatro listas (original, copia_1, copia_2, referencia) y observa los cambios.
+
+numbers2 = [1, 2, 3]
+copia_1 = numbers2 [:]
+copia_2 = numbers2.copy()
+referencia = numbers2
+referencia[0] = 10
+
+print(f"Original: {numbers2}\n")
+print(f"Copia 1: {copia_1}\n")
+print(f"Copia 2: {copia_2}\n")
+print(f"Referencia: {referencia}")
+
+print("--------------Ejercicio 5-------------\n")
+# Ejercicio 6: Ordenar strings sin diferenciar mayúsculas y minúsculas.
+# Crea una lista con las siguientes cadenas: ["Manzana", "pera", "BANANA", "naranja"].
+# Ordena la lista sin diferenciar entre mayúsculas y minúsculas.
+
+comida = ["Manzana", "pera", "BANANA", "Naranja"]
+
+comida_ordenada = sorted(comida)
+print(comida_ordenada)
+ 
+# También se puede hacer así.
+comida.sort(key=str.lower)
+print(comida)
