@@ -52,4 +52,4 @@ while numero < 0:
     except:
         print("Lo que introduces debe ser un numero.")
 
-print(f"El numero que has introducido es {numero}")
+print(f"El numero que has introducido es {numero} y es positivo")
