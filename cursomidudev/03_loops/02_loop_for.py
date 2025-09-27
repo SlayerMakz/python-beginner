@@ -56,4 +56,6 @@ print(animales_mayus)
 pares = [num for num in [1, 2 ,3, 4, 5, 6] if num % 2 == 0 ]
 print(pares)
 
-
+#i in range
+for i in range (0, 15):
+    print(i)

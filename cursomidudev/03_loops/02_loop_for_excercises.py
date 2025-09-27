@@ -3,10 +3,8 @@ os.system("clear")
 # Ejercicio 1: Imprimir numeros pares. 
 # Imprime todos los numeros pares del 2 al 20 (inclusive) usando un bucle for
 print("----------------------------------")
-numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-for num in numeros: 
-    if num % 2 == 0:
-        print(num)
+for i in range(2, 21, 2): 
+    print(i)
 print("----------------------------------")
 # Ejercicio 2: Calcular la media de una lista.
 # Dada la siguiente lista.
@@ -39,3 +37,10 @@ for palabra in lista_palabras:
     if palabra.lower().startswith(letra): #Aqui usamos 2 funciones que es .lower() que va a leer la palabra sin importar si empieza con mayuscula o minuscula y el startswith nos ayudara a que también pueda verificar solamente las palabras que lleven la letra que ingreso el usuario.
         contador += 1 #Esto nos permite agregar al contador e ir sumando las palabras que encuentre.
 print(f"Hay {contador} palabras que empiezan con la letra: {letra}")
+
+###############################################
+# Ejercios extra.
+##############################
+texto = "python"
+for i in texto[::-1]:
+    print(i)
