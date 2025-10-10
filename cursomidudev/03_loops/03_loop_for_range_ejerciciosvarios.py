@@ -1,8 +1,27 @@
-    
-print("Imprime todos los numeros entre el 100 y el 199")
-for i in range(100, 200, 1):
-    print(i)
+print("Generando una secuencia de numeros del 0 al 9\n")
+for num in range(10):
+    print(num)
 
-print("Imprime todos los numeros entre el 5 y el 20, saltando de 3 en 3\n")
-for i in range(5, 21, 3):
-    print(i)  
+print("\nrange: inicio, fin")
+for num in range(5, 10):
+    print(num)
+
+print("\ninicio, fin, paso")
+for num in range(0, 100, 5):
+    print(num)
+
+print("\nConteo al reves")
+for num in range(-5, 0):
+    print(num)
+
+for num in range(10, 0, -1):
+    print(num)
+
+print("Crear una lista")
+nums = range(10)
+list_of_nums = list(nums)
+print(list_of_nums)
+
+
+for _ in range(5):
+    print("Hacer 5 veces algo")
