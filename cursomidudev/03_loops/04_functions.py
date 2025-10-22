@@ -62,3 +62,12 @@ def sumar_numeros(*args): #Si por ejemplo, no conozco cuantos argumentos voy a u
 print(sumar_numeros(1, 2, 3, 4, 5))
 print(sumar_numeros(1, 2))
 print(sumar_numeros(1, 2, 3, 4, 5, 6, 7, 8))
+
+# Argumentos de clave-valor variable (**kwargs)
+def mostrar_informacion_de(**kwargs):
+    for clave, valor in kwargs.items():
+        print(f"{clave}: {valor}")
+print("\n")
+mostrar_informacion_de(nombre="midudev", edad=25, sexo="gato")
+print("\n")
+mostrar_informacion_de(name="madeval", edad=21, country="Uruguay")
