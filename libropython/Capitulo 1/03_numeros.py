@@ -49,3 +49,24 @@ print(f"Muchos numeros decimales: {op5}")
 # Si mezclamos un flotante y un entero en una operación, también obtendremos un flotante. 
 op6 = 1 + 2.0 
 print(f"Esto es un entero + flotante: {op6}")
+
+
+# Constantes
+# Una constante es como una variable, pero, cuyo valor permanece invariable a lo largo del programa. Python no tiene tipos de constantes integrados, se acostumbra indicar una variable tratarse como una constante y no alterarse nunca. 
+
+MAX_CONNECTIONS = 5000
+
+# Ejercicios.
+'''Escriba operaciones de suma, resta, multiplicación y división que den como resultado el número 8. Asegúrese de incluir sus operaciones en llamadas a print() para ver los resultados.'''
+
+print(5 + 3)
+
+print(10 - 2)
+
+print(4 * 2)
+ 
+print(16 / 2)
+
+import this
+
+
