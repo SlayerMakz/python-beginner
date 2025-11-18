@@ -32,6 +32,7 @@ print(characters[-1])
 
 message = f"My primer bicicleta fue una: {bicicletas[0].title()}"
 print(message)
+print('-------------------------------------------------')
 
 ''' Modificar, añadir y eliminar elementos.'''
 '''La mayoría de las listas que cree serán dinámicas, lo que significa que creará la lista para posteriormente añadir y eliminar elementos a medida que el programa siga su curso. Por ejemplo, podría crear un juego en el que un jugador tenga que disparar alienígenas en el espacio. Podría guardar el conjunto inicial de alienígenas en una lista y eliminar uno cada vez que le disparen. La lista de extraterrestres aumentará y disminuirá en el transcurso del juego.
@@ -57,7 +58,40 @@ print(motorcycles)
 ''' El metodo .append() facilita la creación dinámica de listas. Eje, podemos empezar con una lista vacía y añadir elementos después con una serie de llamadas a .append(). Usando una lista en blanco, vamos a añadirle los elementos'''
 
 motorcycles = []
-motorcycles.append(input('Ingrese una marca de motos:').strip())
+# Puede pedirle al usuario el valor que quiera en la lista con input o bien ingresarlo manualmente en el código.
+motorcycles.append(input('Ingrese una marca de motos:').strip()) # Podemos usar el metodo .strip() para eliminar errores de espacio que ingrese el usuario.
 motorcycles.append('yamaha')
 motorcycles.append('suzuki')
+print(motorcycles)
+print('-------------------------------------------------')
+
+''' Insertar elementos a una lista'''
+# Podemos añadir un elemento nuevo a una lista en cualquier posición con el método insert(). Para ello, especificaremos el índice del nuevo elemento y su valor. Esta operación desplaza todos los demás valores de la lista una posición a la derecha.
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+
+motorcycles.insert(0, 'ducati')
+print(motorcycles)
+
+# Puede ser en cualquier posición.
+motorcycles = ['honda', 'yamaha', 'suzuki']
+motorcycles.insert(1, 'ducati')
+print(motorcycles)
+print('-------------------------------------------------')
+
+''' Eliminar elementos de una lista '''
+# Con frecuencia, necesitará eliminar un elemento o varios de una lista. Por ejemplo, cuando un jugador dispare a un extraterestre, tendrá que quitarlo de la lista de alienígenas activos. O, si un usuario decide cancelar su cuenta en una aplicación web,tendrá que quitarlo de la lista de usuarios activos. Puede eliminar un elemento según su posición en la lista o según su valor.
+
+# Si conoce la posición del elemento que desea eliminar de la lista, puede usar la sentencia "del"
+
+''' Eliminar un elemento con la sentencia del'''
+# En este ejemplo utilizamos la sentencia del para eliminar el primer elemento, 'honda', de la lista de motos:
+motorcycles = ['honda', 'yamaha', 'suzuki']
+del motorcycles[0]
+print(motorcycles)
+
+# Podemos eliminar un elemento en cualquier posición de una lista. Por ejemplo, para quitar el seundo elmento de la lista.
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+del motorcycles[1]
 print(motorcycles)
