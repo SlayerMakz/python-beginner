@@ -63,7 +63,7 @@ motorcycles.append(input('Ingrese una marca de motos:').strip()) # Podemos usar 
 motorcycles.append('yamaha')
 motorcycles.append('suzuki')
 print(motorcycles)
-<<<<<<< HEAD
+
 print('-------------------------------------------------')
 
 ''' Insertar elementos a una lista'''
@@ -95,21 +95,41 @@ print(motorcycles)
 
 motorcycles = ['honda', 'yamaha', 'suzuki']
 del motorcycles[1]
-=======
-
-''' Insertar elementos en una lista '''
-# Podemos anadir un elemento nuevo a una lista en cualquier posicion con el metodo insert(), para ello, especificaremos el indice del nuevo elemento y su valor 
-# Eje
-
-motorcycles = ['honda', 'yamaha', 'suzuki']
-motorcycles.insert(0, 'ducati')
-
 print(motorcycles)
 
-''' Eliminar elementos de una lista'''
-# Con frecuencia, necesitará eliminar un elemento o varios de una lista. Por ejemplo, cuando un jugador dispare a un extraterrestre, tendrá que quitarlo de la lista de alienígenas activos. O, si un usuario decide cancelar su cuenta en una aplicación web, tendrá que quitarlo de la lista de usuarios activos. Puede eliminar un elemento según su posición en la lista o según su valor.
+
+''' Eliminar elementos con pop()'''
+# En ocasiones, necesitaremos usar el valor de un elemento tras haberlo eliminado de una lista. Por ejemplo, podríamos necesitar la posición x e y de un alienígena al que acaban de derribar para poder dibujar una explosión en esa posición. En una aplicación web podríamos necesitar eliminar a un usuario de una lista de miembros activos para añadirlo a una de miembros inactivos.
 
 motorcycles = ['honda', 'yamaha', 'suzuki']
-del motorcycles[0]
->>>>>>> c6c303b609a3d02458f25081cfea166f5df8becb
 print(motorcycles)
+
+popped_motorcycle = motorcycles.pop()
+print(motorcycles)
+print(popped_motorcycle)
+# Suzuki
+# Básicamente aquí lo que hace es eliminar de la lista la última opción agregada y sacarla para utilizarla 
+
+# ¿Qué utilidad puede tener este método pop()? Imagine que las motos de la lista están
+# guardadas en orden cronológico por fecha de adquisición. En ese caso, podríamos
+# utilizar el método pop() para mostrar una frase sobre la última moto que hemos
+# comprado:
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+last_owned = motorcycles.pop()
+print(f"La última motocicleta que compre es una {last_owned.title()}")
+
+''' Sacar elementos de una lista con metodo pop() '''
+# Podemos usar el método pop() para retirar un elemento de cualquier posición de una lista incluyendo el índice de ese elemento entre paréntesis.
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+first_owned = motorcycles.pop(0)
+print(f"La primer moto que yo compré, fue una {first_owned.title()}")
+
+''' Eliminar un elemento por valor con remove()'''
+# A veces desconocemos la posición del valor que necesitamos eliminar de una lista. Si solo sabemos el valor del elemento, podemos usar el método remove()
+
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+motorcycles.remove('ducati')
+print(motorcycles)
+
