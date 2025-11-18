@@ -63,6 +63,7 @@ motorcycles.append(input('Ingrese una marca de motos:').strip()) # Podemos usar 
 motorcycles.append('yamaha')
 motorcycles.append('suzuki')
 print(motorcycles)
+<<<<<<< HEAD
 print('-------------------------------------------------')
 
 ''' Insertar elementos a una lista'''
@@ -94,4 +95,21 @@ print(motorcycles)
 
 motorcycles = ['honda', 'yamaha', 'suzuki']
 del motorcycles[1]
+=======
+
+''' Insertar elementos en una lista '''
+# Podemos anadir un elemento nuevo a una lista en cualquier posicion con el metodo insert(), para ello, especificaremos el indice del nuevo elemento y su valor 
+# Eje
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+motorcycles.insert(0, 'ducati')
+
+print(motorcycles)
+
+''' Eliminar elementos de una lista'''
+# Con frecuencia, necesitará eliminar un elemento o varios de una lista. Por ejemplo, cuando un jugador dispare a un extraterrestre, tendrá que quitarlo de la lista de alienígenas activos. O, si un usuario decide cancelar su cuenta en una aplicación web, tendrá que quitarlo de la lista de usuarios activos. Puede eliminar un elemento según su posición en la lista o según su valor.
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+del motorcycles[0]
+>>>>>>> c6c303b609a3d02458f25081cfea166f5df8becb
 print(motorcycles)
