@@ -26,5 +26,30 @@ print(lista_invitados)
 lista_invitados.insert(1, 'skyler')
 lista_invitados.insert(2, 'walter jr')
 lista_invitados.append('mary')
-for i in lista_invitados:
-    print(f"Hola te invito a mi fiesta")
+
+print(f"Hola {lista_invitados[0].title()}, te invito a mi fiesta")
+print(f"Hola {lista_invitados[1].title()}, te invito a mi fiesta")
+print(f"Hola {lista_invitados[2].title()}, te invito a mi fiesta")
+print(f"Hola {lista_invitados[3].title()}, te invito a mi fiesta")
+print(f"Hola {lista_invitados[4].title()}, te invito a mi fiesta")
+print(f"Hola {lista_invitados[5].title()}, te invito a mi fiesta\n")
+
+''' La mesa no llegará a tiempo'''
+print("Surgió un inconveniente y por el momento solamente puedo invitar a 2 personas")
+
+quitar_invitados = lista_invitados.pop()
+print(f"Lo siento, voy a tener que desinvitarte {quitar_invitados.title()}")
+quitar_invitados = lista_invitados.pop()
+print(f"Lo siento, voy a tener que desinvitarte {quitar_invitados.title()}")
+quitar_invitados = lista_invitados.pop()
+print(f"Lo siento, voy a tener que desinvitarte {quitar_invitados.title()}")
+quitar_invitados = lista_invitados.pop()
+print(f"Lo siento, voy a tener que desinvitarte {quitar_invitados.title()}")
+print(f" Ustedes, {lista_invitados[0].title()} y {lista_invitados[1].title()} siguen invitados")
+print(lista_invitados)
+
+''' Use del para borrar los últimos nombres de la lista e imprimala'''
+del lista_invitados[0]
+del lista_invitados[0] # Se pone 0 de nuevo porque al eliminar a walter, skyler queda en la posición 0 o inicial de la lista
+print(lista_invitados)
+
